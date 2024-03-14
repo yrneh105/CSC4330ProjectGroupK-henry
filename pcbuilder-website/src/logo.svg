@@ -1,0 +1,6 @@
+<!-- logo.svg -->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Replace this with your actual logo SVG markup -->
+  <circle cx="50" cy="50" r="40" fill="blue" />
+</svg>
