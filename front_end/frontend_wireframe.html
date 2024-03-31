@@ -9,20 +9,25 @@
             font-family: sans-serif;
             margin: 0;
             padding: 0;
+
         }
 
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
-            background-color: #f0f0f0;
+            padding: 1rem 1rem;
+            background-color: #e0e0e0;
         }
 
         .logo {
             font-size: 1.5rem;
-            font-weight: bold;
+            margin-right: 20px;
         }
+
+        nav {
+    margin-right: auto;
+    }
 
         nav ul {
             list-style: none;
@@ -41,7 +46,7 @@
         }
 
         main {
-            padding: 2rem;
+            padding: 2rem ;
         }
 
         section {
@@ -52,14 +57,127 @@
             margin-bottom: 1rem;
         }
 
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        .tab-container {
+        
+        margin-top: 2rem;
+        width: 150px; 
+        background-color: #faf4f4b7; 
+        height: 175px; 
         }
+
+    .tab {
+        padding: 5px 5px; /* Padding for each tab */
+        border-bottom: 1px solid #ccc; /* Border between tabs */
+        cursor: pointer; /* Show pointer cursor on hover */
+    }
+
+    .tab:hover {
+        background-color: #e0e0e0; 
+    }
+
+    .tab.active {
+        background-color: #ddd; 
+        font-weight: bold; 
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 300%;
+        height: 15%;
+        background-color: #d57979;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+.build-container {
+        display: flex;
+        justify-content: center; 
+        flex-direction: column; 
+        margin: 0 300px; 
+        width: 100%;
+    }
+
+    .builds {
+        width: 50px;
+        height: 25px;
+        background-color: #ccc;
+        margin: 10px;  
+    }
+    .box-container {
+        display: flex;
+        justify-content: space-around;
+        width: 300px; 
+        margin: 0 550px; 
+    }
+
+    .box {
+        width: 250px;
+        height:90px; 
+        background-color: #ccc;
+        margin: 0 10px;
+        margin-top: -5rem; 
+    }
+
+
+    .box h3 {
+        margin-top: 0;
+        color: #fff;
+       
+    }
+
+    .selected-components-container {
+        position: relative;
+        width: 100px; 
+        height: 180px;
+        margin-top: 2rem; 
+    }
+
+    .selected-components {
+        position: absolute;
+        top: -120%;
+        left: 215%;
+        margin: 0 80px;
+        transform: translateX(-50%);
+        width: 150px; 
+        height: 200%; 
+        background-color: #ccc; 
+    }
+    .progress-build-container {
+        position: relative;
+        width: 100px; 
+        height: 175px;
+        margin-top: 2rem; 
+    }
+
+    .progress-build {
+        position: absolute;
+        top: -230%;
+        left: 300%;
+        margin: 0 350px;
+        transform: translateX(-50%);
+        width: 300px; 
+        height: 150%; 
+        background-color: #ccc; 
+    }
+    .optional-components{
+        width: 50px; 
+        height: 30px; 
+        background-color: #ccc; 
+        border-radius: 50%; 
+    }
+
+    .oval-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 10px; 
+        margin-bottom: 40px; 
+        width: 30%;
+        height: 10px; 
+    }
+
     </style>
 </head> 
 <body>
@@ -67,21 +185,58 @@
         <div class="logo">LOGO</div>
         <nav>
             <ul>
-                <li><a href="#">Guided Build</a></li>
-                <li><a href="#">PreBuilt</a></li>
-                <li><a href="#">Component Shop</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Build</a></li>
+                <li><a href="#">Component</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="latest-builds">
-            <h2>Latest Builds</h2>
-            <button>See More</button>
-        </section>
-        <section class="highest-rated">
-            <h2>Highest Rated Builds</h2>
-            <button>See More</button>
-        </section>
-    </main>
 </body>
+<div class="tab-container">
+    <div class="tab active">Tab 1</div>
+    <div class="tab">Tab 2</div>
+    <div class="tab">Tab 3</div>
+    <div class="tab">Tab 4</div>
+    <div class="tab">Tab 5</div>
+    <div class="tab">Tab 6</div>
+</div>
+
+<div class="selected-components-container">
+    <div class="selected-components"></div>
+</div>
+
+<div class="progress-build-container">
+    <div class="progress-build"></div>
+</div>
+
+<div class="oval-container">
+    <div class="optional-components"></div>
+    <div class="optional-components"></div>
+    <div class="optional-components"></div>
+</div>
+
+<div class="footer">
+      <div class="build-container">
+            <div class="builds">
+                
+            </div>
+            <div class="builds">
+                
+            </div>
+    </div>  
+    <div class="box-container">
+        <div class="box">
+           
+        </div>
+        <div class="box">
+          
+        </div>
+        <div class="box">
+
+        </div>
+
+       
+</div>
+
 </html>
